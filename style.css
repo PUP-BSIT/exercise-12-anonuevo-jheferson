@@ -1,0 +1,50 @@
+h2 {
+	margin-bottom: 10px;
+	color: #007bff;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-shadow: black 1px 1px 0;
+	text-align: center;
+}
+
+.counter-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+	max-width: 400px;
+	padding: 20px;
+	margin: 20px auto;
+}
+
+.counter-container div {
+	padding: 10px;
+	margin: 10px;
+}
+
+.count {
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.button {
+	padding: 10px 20px;
+	background-color: #0056b3;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
