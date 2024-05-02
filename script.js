@@ -2,13 +2,13 @@ let startButton = document.querySelector('#start_button');
 let pauseButton = document.querySelector('#pause_button');
 let resumeButton = document.querySelector('#resume_button');
 let stopButton = document.querySelector('#stop_button');
-let displayCounter = document.querySelector('#counter');
+let displayCount = document.querySelector('#count');
 
-let counter = 0;
+let count = 0;
 let timer;
 
 function startTimer() {
-    timer = setInterval(updateCounter, 1000);
+    timer = setInterval(updateCount, 1000);
 }
 
 function pauseTimer() {
@@ -21,13 +21,13 @@ function resumeTimer() {
 
 function stopTimer() {
     clearInterval(timer);
-    counter = 0;
-    displayCounter.innerText = counter;
+    count = 0;
+    displayCount.innerText = count;
 }
 
-function updateCounter() {
-    counter++;
-    displayCounter.innerText = counter;
+function updateCount() {
+    count++;
+    displayCount.innerText = count;
 }
 
 startButton.addEventListener('click', startTimer);
