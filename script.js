@@ -3,6 +3,7 @@ let timer;
 
 let startButton = document.querySelector('#start_button');
 let pauseButton = document.querySelector('#pause_button');
+let resumeButton = document.querySelector('#resume_button');
 let displayCounter = document.querySelector('#counter');
 
 function startTimer() {
@@ -13,6 +14,10 @@ function pauseTimer() {
     clearInterval(timer);
 }
 
+function resumeTimer() {
+    startTimer();
+}
+
 function updateCounter() {
     counter++;
     displayCounter.innerText = counter;
@@ -20,3 +25,4 @@ function updateCounter() {
 
 startButton.addEventListener('click', startTimer);
 pauseButton.addEventListener('click', pauseTimer);
+resumeButton.addEventListener('click', resumeTimer);
